@@ -1,0 +1,19 @@
+<h3>Con-Goer Bingo</h3>
+<table border="1">
+  <tr>
+    <th>B</th>
+    <th>I</th>
+    <th>N</th>
+    <th>G</th>
+    <th>O</th>
+  </tr>
+  <tr>
+  <% @random_congoers.each_with_index do |congoer, i| %>
+    
+    <td align="center"><%= congoer %></td>
+    <% if (i + 1) % 5 == 0 %>   
+      </tr>
+      <tr>
+    <% end %>
+  <% end %>
+</table>
