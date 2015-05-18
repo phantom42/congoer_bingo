@@ -10,7 +10,7 @@
   <tr>
   <% @random_congoers.each_with_index do |congoer, i| %>
     
-    <td align="center"><%= congoer %></td>
+    <td align="center" class="<%= (i == 12) ? "free" : "square" %>"> <%= congoer %></td>
     <% if (i + 1) % 5 == 0 %>   
       </tr>
       <tr>

@@ -1,0 +1,25 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "sass_vars";
+
+body {
+  background-color: #fff ;
+  color: #000 ;
+}
+th {
+  font-weight: bold;
+  text-align: center;
+}
+th, td {
+  padding: 5px ;
+}
+td:hover {
+  background-color: #ccc;
+};
+.selected-square {
+  background-color: #f00;
+}
+td.selected-square:hover {
+  background-color: #f66;
+};
