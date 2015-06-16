@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <h1 class="text-center">Con-Goer Bingo</h1>
+  <table class="table-bordered">
+    <tr>
+      <th>B</th>
+      <th>I</th>
+      <th>N</th>
+      <th>G</th>
+      <th>O</th>
+    </tr>
+    <tr>
+    <% @random_congoers.each_with_index do |congoer, i| %>
+      
+      <td align="center" class="<%= (i == 12) ? "free" : "square" %>"> <%= congoer %></td>
+      <% if (i + 1) % 5 == 0 %>   
+        </tr>
+        <tr>
+      <% end %>
+    <% end %>
+  </table>
+</div>
